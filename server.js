@@ -1,4 +1,4 @@
-const Eris = require('eris');
+const Eris = require('eris');                          // The library we're using to interact with the Discord API
  
 const bot = new Eris(process.env.DISCORD_BOT_TOKEN);   // Replace DISCORD_BOT_TOKEN in .env with your bot accounts token
  
