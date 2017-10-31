@@ -7,7 +7,7 @@ bot.on('ready', () => {                                // When the bot is ready
 });
  
 bot.on('messageCreate', (msg) => {                     // When a message is created
-    if(msg.content === '1337') {                       // If the message content is "1337"
+    if(msg.content.includes('1337')) {                 // If the message content includes "1337"
         bot.createMessage(msg.channel.id, 'damn it');  // Send a message in the same channel with "damn it"
     }
 });
