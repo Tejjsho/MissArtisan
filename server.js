@@ -7,8 +7,12 @@ bot.on('ready', () => {                                // When the bot is ready
 });
  
 bot.on('messageCreate', (msg) => {                     // When a message is created
-    if(msg.content.includes('1337')) {                 // If the message content includes "1337"
-        bot.createMessage(msg.channel.id, 'damn it');  // Send a message in the same channel with "damn it"
+    if(msg.content.startsWith('-add')) 
+    {                 // If the message content includes "1337"
+        var x = msg; 
+        var y = x.split(" ");
+         
+        bot.createMessage(msg.channel.id, y);  // Send a message in the same channel with "damn it"
     }
 });
  
